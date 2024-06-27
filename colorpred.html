@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaze</title>
+    <link rel="stylesheet" href="colorpred.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="custom-alert-box" class="custom-alert hidden">
+        <div class="custom-alert-content">
+            <span class="custom-alert-close">&times;</span>
+            <p id="custom-alert-message"></p>
+            <div class="custom-alert-progress">
+                <div class="custom-alert-progress-bar" id="custom-alert-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="item1 items" id="item1">
+            <button>CASINO</button>
+            <button id="id1" onclick="customAlert('Development in progress.')">SPORTS</button>
+        </div>
+        <div class="item2 items" id="item2">
+            <div class="logo">Glaze</div>
+            <!-- <div class="walletonclick">
+                <form>
+                    <h3 id="some">Wallet (Close)</h3>
+                    <div class="upi">
+                        <h4>Deposit money through UPI</h4><img src="UPI-Logo-vector.svg.webp" alt="">
+                    </div>
+                    <div class="amountclick">
+                        <div class="buttonadd">500</div>
+                        <div class="buttonadd">500</div>
+                        <div class="buttonadd">500</div>
+                    </div>
+                    <input type="number" name="" id="">
+                    <h5>Minimum : ₹100 | Maximum : ₹49,999</h5>
+                    <button>Deposit</button>
+                </form>
+            </div> -->
+            <div class="wallet" id="addmoney">
+                &nbsp;<span class="BeforeLightblue"><i class="fa-solid fa-indian-rupee-sign"></i>
+                    <div id="price">0</div>
+                </span><button class="Lightblue">Wallet</button>
+            </div>
+            <div class="others"><i class="fa-solid fa-bell" onclick="customAlert('No Notifications')"></i>
+                <i class="fa-solid fa-envelope" onclick="customAlert('No messages from Admin.')"></i>
+                <img src="cat.jpeg" alt="" class="profile-img" id="profile"></i>
+                <span></span>
+            </div>
+        </div>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu" id="sub-menu">
+                <div class="user-info">
+                    <img src="cat.jpeg" alt="">
+                    <h4>Ayush Biju</h4>
+                </div>
+                <hr>
+                <div class="othervanishingstuffs">
+                    <div class="profile it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-user"></i>Profile</div>
+                    <hr>
+                    <div class="vip it" onclick="customAlert('Buy VIP @ 99.')"><i class="fa-solid fa-crown"></i>VIP</div>
+                    <hr>
+                    <div class="wallets it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-wallet"></i>Wallet</div>
+                    <hr>
+                    <div class="settings it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-gear" ></i>Settings</div>
+                    <hr>
+                    <div class="logout it" onclick="customAlert('Login fist Fool.')"><i class="fa-solid fa-arrow-right-from-bracket" ></i>Logout</div>
+                </div>
+            </div>
+        </div>
+        <div class="item3 items" id="item3">
+            <div class="boxforfun">
+                <div class="boss" onclick="customAlert('Login to continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-regular fa-star"></i>&nbsp;&nbsp;&nbsp;Favourites
+                </div>
+                <div class="boss" onclick="customAlert('Login to continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i
+                        class="fa-solid fa-clock-rotate-left"></i>&nbsp;&nbsp;&nbspRecents</div>
+                <div class="boss" onclick="customAlert('Login to continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-regular fa-message"></i>&nbsp;&nbsp;&nbspMy Bets
+                </div>
+                <div class="boss" onclick="customAlert('Casino always wins.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-solid fa-masks-theater"></i>&nbsp;&nbsp;&nbspMade
+                    By Ayush </div>
+            </div>
+        </div>
+        <div class="item4 items" id="item4">
+            <div class="colorpred">
+                <div class="box1 boxes">
+                    <form class="query" id="gameform">
+                        <h2>Color Prediction</h2>
+                        <div>
+                            <p>Bet Amount</p>
+                            <div class="design">
+                                <input type="number" name="" id="betAmount" placeholder="0">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+                        </div>
+                        <div class="choose">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="styled-checkbox-1" class="styled-checkbox">
+                                <label for="styled-checkbox-1" class="styled-checkbox-label" id="styled-checkbox-1-value">Red</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="styled-checkbox-2" class="styled-checkbox">
+                                <label for="styled-checkbox-2" class="styled-checkbox-label" id="styled-checkbox-2-value">Green</label>
+                            </div>
+                        </div>
+                        <button id="getinputvalue">Bet</button>
+                    </form>
+                </div>
+                <div class="box2 boxes">
+                    <div class="heading">
+                        <h1>Place your Bet</h1>
+                    </div>
+                    <div class="colorbox1 cb"></div>
+                    <div class="colorbox2 cb"></div>
+                    <div class="game-info">
+                        <div>
+                            <h4>Note : This is a simulation of a betting game . Don't invest any money in it<br></h4>
+                            <p>How to play ? <br>
+                                Add money to the wallet. Select the color and place the bet.
+                            </p>
+                            <h4>Buy me a cofee at - ayushbiju8@okaxis</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script2.js"></script>
+</body>
+
+</html>

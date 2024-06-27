@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="custom-alert-box" class="custom-alert hidden">
+        <div class="custom-alert-content">
+            <span class="custom-alert-close">&times;</span>
+            <p id="custom-alert-message"></p>
+            <div class="custom-alert-progress">
+                <div class="custom-alert-progress-bar" id="custom-alert-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="body">
+        <div class="item1 items" id="item1">
+            <button>CASINO</button>
+            <button id="id1" onclick="customAlert('Development in progress.')">SPORTS</button>
+        </div>
+        <div class="item2 items" id="item2">
+            <div class="logo">Glaze</div>
+            <!-- <div class="walletonclick">
+                <form>
+                    <h3 id="some">Wallet (Close)</h3>
+                    <div class="upi">
+                        <h4>Deposit money through UPI</h4><img src="UPI-Logo-vector.svg.webp" alt="">
+                    </div>
+                    <div class="amountclick">
+                        <div class="buttonadd">500</div>
+                        <div class="buttonadd">500</div>
+                        <div class="buttonadd">500</div>
+                    </div>
+                    <input type="number" name="" id="">
+                    <h5>Minimum : ₹100 | Maximum : ₹49,999</h5>
+                    <button>Deposit</button>
+                </form>
+            </div> -->
+            <div class="wallet" id="addmoney">
+                &nbsp;<span class="BeforeLightblue"><i class="fa-solid fa-indian-rupee-sign"></i><div id="price">0</div></span><button class="Lightblue">Wallet</button>
+            </div>
+            <div class="others"><i class="fa-solid fa-bell" onclick="customAlert('No Notifications.')"></i>
+                <i class="fa-solid fa-envelope" onclick="customAlert('No messages from Admin.')"></i>
+                <img src="cat.jpeg" alt="" class="profile-img" id="profile"></i>
+                <span></span>
+            </div>
+        </div>
+        <div class="sub-menu-wrap">
+            <div class="sub-menu" id="sub-menu">
+                <div class="user-info">
+                    <img src="cat.jpeg" alt="">
+                    <h4>Ayush Biju</h4>
+                </div>
+                <hr>
+                <div class="othervanishingstuffs">
+                    <div class="profile it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-user"></i>Profile</div>
+                    <hr>
+                    <div class="vip it" onclick="customAlert('Buy VIP @ 99.')"><i class="fa-solid fa-crown"></i>VIP</div>
+                    <hr>
+                    <div class="wallets it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-wallet"></i>Wallet</div>
+                    <hr>
+                    <div class="settings it" onclick="customAlert('Login to Continue.')"><i class="fa-solid fa-gear" ></i>Settings</div>
+                    <hr>
+                    <div class="logout it" onclick="customAlert('Login fist Fool.')"><i class="fa-solid fa-arrow-right-from-bracket" ></i>Logout</div>
+                </div>
+            </div>
+        </div>
+        <div class="item3 items" id="item3">
+            <div class="boxforfun">
+                <div class="boss" onclick="customAlert('Login to Continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-regular fa-star"></i>&nbsp;&nbsp;&nbsp;Favourites
+                </div>
+                <div class="boss" onclick="customAlert('Login to Continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i
+                        class="fa-solid fa-clock-rotate-left"></i>&nbsp;&nbsp;&nbspRecents</div>
+                <div class="boss" onclick="customAlert('Login to Continue.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-regular fa-message"></i>&nbsp;&nbsp;&nbspMy Bets
+                </div>
+                <div class="boss" onclick="customAlert('Casino Always Wins.')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-solid fa-masks-theater"></i>&nbsp;&nbsp;&nbspMade
+                    By Ayush </div>
+                <div class="boss" onclick="customAlert('ayushbiju8@okaxis')">&nbsp;&nbsp;&nbsp;&nbsp<i class="fa-solid fa-mug-saucer"></i></i>&nbsp;&nbsp;&nbspBuy
+                    me a Coffee</div>
+            </div>
+        </div>
+        <div class="item4 items" id="item4">
+            <div class="topcards">
+                <div class="topcard1 topcard">
+                    <div class="context">
+                        <h2>Daily Games</h2>
+                        <p>Play in 100+ <br>daily games for free.</p>
+                        <button>Play Now</button>
+                    </div>
+                    <div class="image"><img src="pexels-thomas-brenac-191911-599705.jpg" alt="" style="border-radius: 4px; height: 170px;"></div>
+                </div>
+                <div class="topcard1 topcard">
+                    <div class="context">
+                        <h2>French Open</h2>
+                        <p>Bet in <br>upcomming games.</p>
+                        <button>Play Now</button>
+                    </div>
+                    <div class="image"><img src="pexels-dialophotography-13633979.jpg" alt="" style="border-radius: 4px; height: 170px;"></div>
+                </div>
+                <div class="topcard1 topcard">
+                    <div class="context">
+                        <h2>Weekly Games</h2>
+                        <p>Challenge and beat <br>2 million + users.</p>
+                        <button>Play Now</button>
+                    </div>
+                    <div class="image"><img src="pexels-coco-championship-191448-598682.jpg" style="border-radius: 4px; height: 170px;" alt=""></div>
+                </div>
+            </div>
+            <div class="whole">
+                <h1><i class="fa-solid fa-fire"></i>&nbsp;Glaze Originals</h1>
+                <div class="cardcontainer">
+                    <div class="cards"><a href="http://127.0.0.1:5500/colorpred.html"><img src="RedvsGreen.png" alt=""></a></div>
+                    <div class="cards"><a href="https://youtu.be/dQw4w9WgXcQ?si=S32B7eGBonj7anBo"><img src="dice1.jpg" alt=""></a></div>
+                    <div class="cards"><a href="https://youtu.be/dQw4w9WgXcQ?si=S32B7eGBonj7anBo"><img src="roulette.jpg" alt=""></a></div>
+                    <div class="cards"><a href="https://youtu.be/dQw4w9WgXcQ?si=S32B7eGBonj7anBo"><img src="poker1.jpg" alt=""></a></div>
+                    <div class="cards"><a href="https://youtu.be/dQw4w9WgXcQ?si=S32B7eGBonj7anBo"><img src="wheel.jpg" alt=""></a></div>
+                    <div class="cards"><a href="https://youtu.be/dQw4w9WgXcQ?si=S32B7eGBonj7anBo"><img src="pexels-pixabay-47344.jpg" alt=""></a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
